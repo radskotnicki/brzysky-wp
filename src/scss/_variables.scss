@@ -1,0 +1,13 @@
+// FONTS
+@mixin fontTitles($weight, $size, $color) {
+  font-family: "Mulish", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}
+@mixin fontText($weight, $size, $color) {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}

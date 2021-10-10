@@ -1,0 +1,46 @@
+// PLAYER STYLES - [ALL PAGES]
+.player{
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+
+  &__wrapper{
+    width: 100%;
+  }
+  .plyr__poster{
+    background-size: cover;
+  }
+  .plyr__controls{
+    opacity: 0;
+  }
+  .plyr__control--overlaid, .plyr__control{
+    background: none;
+    &:hover{
+      background: var(--yellow);
+    }
+  }
+  .plyr__control{
+    display: none;
+  }
+  .plyr--full-ui input[type="range"]{
+    color: var(--plyr-range-fill-background,
+            var(--plyr-color-main,
+              var(--plyr-color-main, var(--yellow))
+            )
+           );
+  }
+  .plyr__time{
+    @include fontTitles(500, 1em, var(--main-dark-text-color));
+  }
+  &:hover{
+    .plyr__controls{
+      opacity: 100;
+    }
+  }
+}
+
+@include responsive(phone){
+  .player{
+    margin-bottom: 30px;
+  }
+}

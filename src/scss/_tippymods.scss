@@ -1,0 +1,44 @@
+// STYLES TIPPY PLUGIN
+.tippy-box[data-theme~='custom'] {
+  @include fontTitles(300, 1rem, var(--yellow));
+  text-transform: uppercase;
+  background: white;
+}
+.tippy-box[data-theme~='custom'] .tippy-arrow {
+  border-top: 7px solid white;
+  background: white;
+  color: white;
+}
+.tippy-box[data-theme~='custom-success'] {
+  @include fontTitles(300, 1.1rem, var(--white));
+  text-transform: uppercase;
+  background: var(--main-dark-text-color);
+}
+
+//crew mail theme
+.tippy-box[data-theme~='crew'] {
+  @include fontTitles(300, .9rem, var(--main-light-text-color));
+  text-transform: uppercase;
+  background: var(--main-dark-text-color);
+}
+.tippy-box[data-theme~='crew'] .tippy-arrow {
+  display: none;
+}
+.tippy-box[data-theme~='crew-success'] {
+  @include fontTitles(300, .9rem, var(--yellow));
+  text-transform: uppercase;
+  background: var(--white);
+}
+
+.tippy-box[data-theme~='crew-success'] .tippy-arrow {
+  display: none;
+}
+
+@include responsive(phone){
+  .tippy-box[data-theme~='custom'] {
+    display: none;
+  }
+  .tippy-box[data-theme~='crew'] {
+    display: none;
+  }
+}

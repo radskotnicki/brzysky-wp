@@ -1,0 +1,40 @@
+// POSTS TITLES SECTION - [FRONT PAGE, ARCHIVE]
+.posts{
+  margin: 50px 0;
+  &__title{
+    @include fontTitles(700, 3.57rem, var(--main-dark-text-color));
+    line-height: 3.91rem;
+    letter-spacing: -6px;
+    font-kerning: normal;
+    text-transform: uppercase;
+    margin-right: 20px;
+    span{
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: -1px;
+    }
+    &:hover{
+      color: var(--white);
+    }
+  }
+}
+
+@include responsive(phone){
+  .posts{
+    margin: 20px 0;
+    &__title{
+      @include fontTitles(700, 1.8em, var(--main-dark-text-color));
+      line-height: 1.8rem;
+      letter-spacing: -3px;
+      margin-right: 10px;
+      span{
+        font-weight: 600;
+        font-size: .8rem;
+        letter-spacing: -1px;
+      }
+      &:hover{
+        color: var(--white);
+      }
+    }
+  }
+}

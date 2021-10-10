@@ -1,0 +1,65 @@
+// CONTACT SECTION [FRONT PAGE]
+.contact{
+  margin: 20px 0;
+  @include fontTitles(400, 2.72rem, var(--main-dark-text-color));
+  &__mail{
+    margin-top: 10px;
+    line-height: 2.33rem;
+    letter-spacing: -3.4px;
+    p{
+      cursor: pointer;
+      &:hover{
+        color: var(--white);
+      }
+    }
+  }
+  &__social{
+    align-items: flex-start;
+    ul{
+      align-self: flex-start;
+      margin: 0;
+      list-style: none;
+      text-align: right;
+      li{
+        margin-bottom: -26px;
+        letter-spacing: -3.4px;
+        a{
+          color: var(--main-dark-text-color);
+          &:hover{
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive(phone){
+  .contact{
+    margin: 20px 0;
+    @include fontTitles(400, 1.4rem, var(--main-dark-text-color));
+    &__mail{
+      line-height: 10px;
+      letter-spacing: -2px;
+
+    }
+    &__social{
+      align-items: flex-start;
+      ul{
+        align-self: flex-start;
+        list-style: none;
+        text-align: right;
+        li{
+          margin-bottom: -10px;
+          letter-spacing: -2px;
+          a{
+            color: var(--main-dark-text-color);
+            &:hover{
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+  }
+}

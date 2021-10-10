@@ -1,0 +1,19 @@
+.home, .archive{
+  height: 100vh;
+  background-color: #ffe515;
+  font-style: fontStack();
+  // background grainish animation
+  &:after{
+    z-index: -1;
+    animation: grain 9s steps(8) infinite;
+    background-image: url(../images/paper-pattern.png);
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.44;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+  }
+}
+

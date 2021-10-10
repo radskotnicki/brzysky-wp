@@ -1,0 +1,257 @@
+// ABOUT SECTION [FRONT PAGE, ARCHIVE]
+.about{
+  background: var(--white);
+  clip-path: polygon(0 80px, 100% 0%, 100% 97%, 0% 100%);
+  padding: 180px 0;
+  &__content{
+    flex-direction: column;
+    position: relative;
+    &__line{
+      position: relative;
+      width: 100%;
+      height: 17px;
+      object-fit:inherit;
+    }
+    &__info{
+      margin: 70px 0 50px 0;
+      &__photo{
+        width: 50%;
+        margin: 10px;
+        background-image: url('../images/about-crew-image.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      &__text{
+        width: 50%;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 0 20px 0 40px;
+        &__header{
+          @include fontTitles(700, 2.89rem, var(--main-dark-text-color));
+          letter-spacing: -.2rem;
+          line-height: 2.89rem;
+          text-transform: uppercase;
+          font-kerning: normal;
+          white-space: pre-line;
+          align-content: flex-start;
+          align-self: start;
+          margin-bottom: 20px;
+        }
+        &__desc{
+          @include fontText(300, 1.87rem, var(--main-dark-text-color));
+          letter-spacing: -.08rem;
+          line-height: 2.72rem;
+        }
+      }
+    }
+
+    // WHAT WE DO
+    &__whatwedo{
+      flex-direction: column;
+      &__title{
+        @include fontTitles(800, 2.76rem, var(--main-dark-text-color));
+        letter-spacing: -.2rem;
+        text-transform: uppercase;
+        font-kerning: normal;
+        white-space: pre-line;
+        margin: 70px 0;
+
+      }
+      &__card{
+        flex-direction: column;
+        width: 60%;
+        &__icon{
+          img{
+          width: 80px;
+          }
+        }
+        &__title{
+          @include fontTitles(400, 2.12rem, var(--main-dark-text-color));
+          letter-spacing: -.15rem;
+          text-transform: uppercase;
+          font-kerning: normal;
+          white-space: pre-line;
+          margin: 20px 0;
+        }
+        &__text{
+          @include fontText(300, 1.87rem, var(--main-dark-text-color));
+          letter-spacing: -.08rem;
+          line-height: 2.72rem;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      }
+      &__slogan{
+        @include fontTitles(400, 2.12rem, var(--main-dark-text-color));
+        letter-spacing: -.15rem;
+        font-kerning: normal;
+        white-space: pre-line;
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+
+    // CREW
+    &__crew{
+      &__card{
+        flex-direction: column;
+        margin: 70px 0;
+        width: 50%;
+        &__avatar{
+          margin-bottom: 20px;
+          img{
+            border: 5px solid var(--yellow);
+            border-radius: 50%;
+            max-height: 17rem;
+            height: 17rem;
+            filter: opacity(0.85);
+          }
+        }
+        &__name, &__position{
+          @include fontTitles(300, 2.12rem, var(--main-dark-text-color));
+          letter-spacing: -.08rem;
+          font-kerning: normal;
+          white-space: pre-line;
+          margin: 0 0 0 0;
+          text-align: center;
+        }
+        &__position{
+          font-size: 1.19rem;
+          font-weight: 200;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+        &__phone, &__email{
+          @include fontTitles(300, 1.53rem, var(--main-dark-text-color));
+          letter-spacing: -.12rem;
+          font-kerning: normal;
+          white-space: pre-line;
+          text-align: center;
+          line-height: 1.61rem;
+          cursor: pointer;
+        }
+        
+      }
+    }
+  }
+}
+
+@include responsive(tablet){
+// ABOUT SECTION [FRONT PAGE, ARCHIVE]
+.about{
+  &__content{
+    &__info{
+      &__photo{
+        margin: 0px;
+      }
+      &__text{
+        &__header{
+          @include fontTitles(700, 3.4rem, var(--main-dark-text-color));
+        }
+        &__desc{
+          line-height: 2.2rem;
+        }
+      }
+    }
+  }
+}
+}
+
+
+@include responsive(phone){
+
+// ABOUT SECTION [FRONT PAGE, ARCHIVE]
+.about{
+  padding: 80px 0;
+  clip-path: polygon(0 20px, 100% 0%, 100% 98%, 0% 100%);
+  &__content{
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+    justify-self: center;
+    &__line{
+      height: 10px;
+      object-fit: cover;
+    }
+    &__info{
+    flex-direction: column;
+    margin: 26px 0 26px 0;
+      &__photo{
+        width: 90%;
+        background-size: contain;
+      }
+      &__text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        padding: 0 20px 0 20px;
+        &__header{
+          @include fontTitles(700, 1.8rem, var(--main-dark-text-color));
+          letter-spacing: -.1rem;
+          line-height: 1.7rem;
+        }
+        &__desc{
+          @include fontText(300, 1.4rem, var(--main-dark-text-color));
+          line-height: 1.5rem;
+        }
+      }
+    }
+    &__whatwedo{
+      text-align: center;
+      &__title{
+        @include fontTitles(800, 1.6rem, var(--main-dark-text-color));
+        letter-spacing: -.1rem;
+        margin: 40px 0px;
+      }
+      &__card{
+        &__title{
+          @include fontTitles(400, 1.2rem, var(--main-dark-text-color));
+          letter-spacing: -.1rem;
+          margin: 10px 10px;
+        }
+        &__text{
+          @include fontText(300, 1.1rem, var(--main-dark-text-color));
+          letter-spacing: -.02rem;
+          line-height: 1.2rem;
+        }
+        &__icon{
+          img{
+            max-width: 50px;
+          }
+        }
+      }
+      &__slogan{
+        @include fontTitles(400, 1.2rem, var(--main-dark-text-color));
+        letter-spacing: -.1rem;
+        margin: 0;
+      }
+    }
+    // CREW
+    &__crew{
+      &__card{
+        &__avatar{
+          img{
+            border: 2px solid var(--yellow);
+            max-height: 8rem;
+          }
+        }
+        &__name, &__position{
+          @include fontTitles(300, 1.25rem, var(--main-dark-text-color));
+          letter-spacing: -.05rem;
+        }
+        &__position{
+          font-size: .8rem;
+          margin: 4px 0;
+        }
+        &__phone, &__email{
+          @include fontTitles(300, .9rem, var(--main-dark-text-color));
+          letter-spacing: -.07rem;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+}
+}

@@ -1,0 +1,20 @@
+// FOOTER - [ALL PAGES]
+.footer{
+  margin: 80px 0 30px 0;
+  @include fontTitles(400, .8rem, var(--gray));
+  &__credits{
+    a{
+      color: var(--gray);
+      &:hover{
+        color: var(--main-dark-text-color);
+      }
+    }
+  }
+}
+
+@include responsive(phone){
+  .footer{
+    margin: 40px 0 10px 0;
+    font-size: .6rem;
+  }
+}
