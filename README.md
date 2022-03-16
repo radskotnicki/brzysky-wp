@@ -4,6 +4,7 @@
  - HTML, SCSS, Flexbox
  - JS
  - Wordpress, ACF
+ - [Gsap](https://greensock.com/gsap/)
  - [Laravel Mix](https://laravel-mix.com/)
  - [Tippy.js](https://tippyjs.bootcss.com/)
  - [Clipboard.js](https://clipboardjs.com/)
