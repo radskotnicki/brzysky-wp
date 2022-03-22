@@ -1,4 +1,4 @@
-﻿# Wordpress cutom theme for Brzysky Videography.
+﻿# Wordpress custom theme for Brzysky Videography.
  ## A page presenting the portfolio of the filmmaker Brzysky.
  Wordpress custom theme made from scratch with:
  - HTML, SCSS, Flexbox
